@@ -221,7 +221,9 @@ You need Windows 10 or 11 and Godot 4.7 or newer (the project targets 4.7.2). Cl
 godot --path . -- --full
 ```
 
-(Use the path to your Godot executable.) The source-asset download supplies the models, thumbnails, palette and
+(Use the path to your Godot executable.) I tested this on a fresh clone with Godot 4.7, after running the fetch
+script on the real release files: the ranch opened with nothing logged as an error, and residents, berry bowls and the
+toolbar all worked. The source-asset download supplies the models, thumbnails, palette and
 effect textures, and berry models. Music is intentionally available only in packaged game builds; a source clone
 runs silently without logging missing-audio errors.
 
