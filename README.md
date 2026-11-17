@@ -206,6 +206,10 @@ powershell -ExecutionPolicy Bypass -File tools\fetch_models.ps1
 It downloads all four zips, checks each one against the SHA-256 in `tools/models-manifest.json`, and unpacks the
 models into `models/` and their visual companions into `map/`. You can delete `models-download/` afterwards.
 
+The visual assets archive also holds two sprite sheets, `map/regular-atlas.png` and `map/shiny-atlas.png`. These are
+Pokémon-derived 2D thumbnail images, used for the pictures on the deposit screen. Like the models, they are not mine
+and they are not licensed. I'm sharing them under the same fan-project terms and I'll remove them if asked.
+
 There are 1,453 `.glb` files, one per species, form and variant. They were converted from the games' own 3D files
 with a converter I wrote for a separate project, and they come from my model library (`pokemon-model-library`),
 where fixes are made first. **They are not mine and they are not licensed.** I'm sharing them as a fan, knowing The
