@@ -228,10 +228,10 @@ Generation 4 save.
 
 ## Credits and licence
 
-Except for the Save Reader described below, the code in this repo is mine. I haven't chosen a licence for it yet,
-so for now all rights are reserved apart from
-what GitHub's terms allow (viewing and forking). Any licence I add later will cover only my own code and won't
-give you rights to Pokémon, the models, or other people's assets.
+The code in this project is open source under the [MIT licence](LICENSE): the scripts, scenes, shaders, tools and
+original data files. Use it, change it and share it. The MIT licence covers **only** my own work. It gives you no
+rights to Pokémon or anything from the games, the model files, the music, or other people's assets, which are
+covered by their own terms below.
 
 The separate helper in `tools/save-reader` is licensed under **GPL-3.0-only** because it links to GPL-3.0
 PKHeX.Core. Its source, build notes and complete licence text are included in that folder. This licence applies
