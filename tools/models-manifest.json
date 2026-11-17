@@ -20,5 +20,11 @@
       "bytes": 1152892446,
       "sha256": "748ccddbfef18626cea5e8aba53c900f317a78b53afcae0c2ba632a9601e1051"
     }
-  ]
+  ],
+  "runtime": {
+    "name": "PokeFarm-runtime-assets.zip",
+    "files": 4610,
+    "bytes": 411417412,
+    "sha256": "e725994214737589cf200d33199ffc549b9e0b596fd37add5f74e2ab5d59d5f3"
+  }
 }

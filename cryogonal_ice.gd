@@ -1,7 +1,10 @@
 extends RefCounted
 
 static func texture(path:String)->Texture2D:
-    var image:=Image.load_from_file("res://map/cryogonal-"+path+".png")
+    var file:="res://map/cryogonal-"+path+".png"
+    if not FileAccess.file_exists(file):return null
+    var image:=Image.load_from_file(file)
+    if not image or image.is_empty():return null
     image.generate_mipmaps()
     return ImageTexture.create_from_image(image)
 
@@ -25,6 +28,6 @@ static func apply(model:Node):
                     var file:String=settings[param]
                     if file.is_empty():continue
                     if not textures.has(file):textures[file]=texture(file)
-                    mat.set_shader_parameter(param,textures[file])
+                    if textures[file]:mat.set_shader_parameter(param,textures[file])
                 materials[original]=mat
             mesh.set_surface_override_material(index,materials[original])

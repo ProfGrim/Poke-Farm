@@ -20,9 +20,11 @@ static func menu(nature:String,rng:RandomNumberGenerator)->Array:
 
 static func add_fruit(parent:Node3D,id:int,pos:Vector3,width:float,angle:float):
     if not templates.has(id):
+        var path:="res://map/dinner-%d.glb"%id
+        if not FileAccess.file_exists(path):return
         var doc:=GLTFDocument.new()
         var state:=GLTFState.new()
-        if doc.append_from_buffer(FileAccess.get_file_as_bytes("res://map/dinner-%d.glb"%id),"",state)!=OK:return
+        if doc.append_from_buffer(FileAccess.get_file_as_bytes(path),"",state)!=OK:return
         var tree:=doc.generate_scene(state)
         var original:MeshInstance3D=tree.find_children("*","MeshInstance3D",true,false)[0]
         var transform:=original.transform

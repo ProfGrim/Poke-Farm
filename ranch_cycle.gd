@@ -78,7 +78,9 @@ func setup(env:Environment,day_sun:DirectionalLight3D):
     moon.light_color=Color("#bed6ff")
     moon.light_energy=0
     add_child(moon);add_child(audio);add_child(bell)
-    bell.stream=AudioStreamOggVorbis.load_from_buffer(FileAccess.get_file_as_bytes("res://map/dinner-bell.ogg"));bell.volume_db=-7
+    var bell_path:="res://map/dinner-bell.ogg"
+    if FileAccess.file_exists(bell_path):bell.stream=AudioStreamOggVorbis.load_from_buffer(FileAccess.get_file_as_bytes(bell_path))
+    bell.volume_db=-7
     seconds=JSON.parse_string(FileAccess.get_file_as_string("res://map/music.json"))
     audio.volume_db=-12
     sun_disc=disc(Color("#ffe8ac"),12.);moon_disc=disc(Color("#e0eaff"),9.)
@@ -113,13 +115,14 @@ func skip_to_phase(to_night:bool):
 
 func start_track():
     var title:String=playlist[index]
-    var bytes:=FileAccess.get_file_as_bytes("res://map/"+title+".ogg")
+    var path:="res://map/"+title+".ogg"
+    var bytes:=FileAccess.get_file_as_bytes(path) if FileAccess.file_exists(path) else PackedByteArray()
     if not bytes.is_empty():
         audio.stream=AudioStreamOggVorbis.load_from_buffer(bytes)
         if audio.stream and music_enabled:audio.play()
     elapsed=0
     if dinner:
-        bell.play();dinner_started.emit()
+        play_bell();dinner_started.emit()
     elif bell.playing:bell.stop()
 
 func set_music_enabled(enabled:bool):
@@ -129,6 +132,9 @@ func set_music_enabled(enabled:bool):
             audio.play(maxf(0.,elapsed))
     else:
         audio.stop()
+
+func play_bell():
+    if bell.stream:bell.play()
 
 func tick(dt:float,held:bool):
     audio.stream_paused=held;bell.stream_paused=held
@@ -146,11 +152,11 @@ func tick(dt:float,held:bool):
     update_light()
     if breakfast and not breakfast_announced:
         breakfast_announced=true
-        bell.play()
+        play_bell()
         breakfast_started.emit()
     if lunch and not lunch_announced:
         lunch_announced=true
-        bell.play()
+        play_bell()
         lunch_started.emit()
 
 func update_light():

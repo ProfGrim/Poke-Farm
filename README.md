@@ -193,18 +193,18 @@ The Save Reader is a small separate helper that reads saves. Its source is in
 [`tools/save-reader`](tools/save-reader/README.md). It uses PKHeX.Core, which is GPL-3.0 licensed. See
 [`THIRD-PARTY-ASSETS.md`](THIRD-PARTY-ASSETS.md) for the notice and source link.
 
-### Getting the models
+### Getting the models and visual assets
 
 The Pokémon models are three zip files on the [models-1 release](../../releases/tag/models-1), about 3.5 GB in
-total. After cloning, run this from the repo folder in PowerShell:
+total. A fourth archive contains the visual runtime companions: regular palettes, deposit thumbnails, eye and
+effect textures, and meal props. After cloning, run this from the repo folder in PowerShell:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File tools\fetch_models.ps1
 ```
 
-It downloads the zips, checks each one against the SHA-256 in `tools/models-manifest.json`, and unpacks them into
-`models/`. You can delete `models-download/` afterwards. I checked the checksums and the unpacking on the real
-release files: all 1,453 models came out.
+It downloads all four zips, checks each one against the SHA-256 in `tools/models-manifest.json`, and unpacks the
+models into `models/` and their visual companions into `map/`. You can delete `models-download/` afterwards.
 
 There are 1,453 `.glb` files, one per species, form and variant. They were converted from the games' own 3D files
 with a converter I wrote for a separate project, and they come from my model library (`pokemon-model-library`),
@@ -221,10 +221,9 @@ You need Windows 10 or 11 and Godot 4.7 or newer (the project targets 4.7.2). Cl
 godot --path . -- --full
 ```
 
-(Use the path to your Godot executable.) I tested this on a fresh clone with Godot 4.7: the ranch opens, residents
-appear and the toolbar works. A clone is missing a few things that aren't in the repo, so the game logs errors for
-them and runs without them: the music, the thumbnails on the deposit screen, Cryogonal's ice textures and the berry
-models.
+(Use the path to your Godot executable.) The source-asset download supplies the models, thumbnails, palette and
+effect textures, and berry models. Music is intentionally available only in packaged game builds; a source clone
+runs silently without logging missing-audio errors.
 
 Depositing from a save needs the Save Reader. Build it from `tools/save-reader` with .NET 9 (the steps are in that
 folder's README). In a packaged build it goes in a `Save Reader` folder next to `Poke-Farm.exe`. The checked-in
@@ -234,7 +233,6 @@ source has been built successfully with .NET 9 and tested against a synthetic Ge
 
 - The model catalog isn't fully checked. Some colours, eyes, animations and sizes are probably wrong.
 - Only Windows has been tested.
-- A fresh clone runs but has no music, no deposit-screen thumbnails, and no Cryogonal ice textures or berry models.
 
 ## Credits and licence
 
@@ -251,7 +249,8 @@ to the Save Reader helper, not the separately packaged Godot application.
 - **PKHeX.Core** by Kurt (kwsch), GPL-3.0: used by the Save Reader to read save files. The licence text is in
   `tools/save-reader/LICENSE-PKHEX.txt`.
 - **Free Fantasy Music Pack** by Donát Baracsi: the day and night soundtrack. The creator asks for credit. The
-  music files aren't in this repo.
+  music files aren't in this repo or the source-asset download. They are bundled only with packaged game builds;
+  source clones run silently when the files are absent.
 
 Sources, terms and details are in [THIRD-PARTY-ASSETS.md](THIRD-PARTY-ASSETS.md). `PUBLIC-CATALOG-NOTES.md` says
 what was left out of the published JSON catalogs.

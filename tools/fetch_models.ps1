@@ -25,5 +25,17 @@ foreach ($z in $manifest.zips) {
     Write-Host "Unpacking $($z.name)..."
     Expand-Archive $file -DestinationPath $dest -Force
 }
+if ($manifest.runtime) {
+    $z = $manifest.runtime
+    $file = Join-Path $cache $z.name
+    $ok = (Test-Path $file) -and ((Get-FileHash $file -Algorithm SHA256).Hash.ToLower() -eq $z.sha256)
+    if (-not $ok) {
+        Write-Host "Downloading $($z.name) ($([math]::Round($z.bytes / 1MB)) MB)..."
+        Invoke-WebRequest "$BaseUrl/$($z.name)" -OutFile $file
+        if ((Get-FileHash $file -Algorithm SHA256).Hash.ToLower() -ne $z.sha256) { throw "$($z.name) failed its checksum. Delete it and try again." }
+    }
+    Write-Host "Unpacking runtime assets..."
+    Expand-Archive $file -DestinationPath $root -Force
+}
 $n = (Get-ChildItem $dest -Filter *.glb).Count
-Write-Host "Done: $n models in $dest (expected $($manifest.count)). You can delete models-download\ now."
+Write-Host "Done: $n models in $dest (expected $($manifest.count)), plus runtime assets. You can delete models-download\ now."
