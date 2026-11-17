@@ -203,8 +203,8 @@ powershell -ExecutionPolicy Bypass -File tools\fetch_models.ps1
 ```
 
 It downloads the zips, checks each one against the SHA-256 in `tools/models-manifest.json`, and unpacks them into
-`models/`. You can delete `models-download/` afterwards. I tested the script against local copies of the zips. I
-haven't run it against the real release yet.
+`models/`. You can delete `models-download/` afterwards. I checked the checksums and the unpacking on the real
+release files: all 1,453 models came out.
 
 There are 1,453 `.glb` files, one per species, form and variant. They were converted from the games' own 3D files
 with a converter I wrote for a separate project, and they come from my model library (`pokemon-model-library`),
@@ -214,17 +214,27 @@ that okay, and I'm not claiming they do.
 
 ### Running from source
 
-You need Windows 10 or 11 and Godot 4.7.2. Open `project.godot` and press play. I haven't tested a fresh clone
-from the editor. Depositing from a save needs the Save Reader. Build it from `tools/save-reader` with .NET 9
-(the steps are in that folder's README). In a packaged build it goes in a `Save Reader` folder next to
-`Poke-Farm.exe`. The checked-in source has been built successfully with .NET 9 and tested against a synthetic
-Generation 4 save.
+You need Windows 10 or 11 and Godot 4.7 or newer (the project targets 4.7.2). Clone the repo, fetch the models
+(above), and run the full ranch from a terminal in the repo folder:
+
+```powershell
+godot --path . -- --full
+```
+
+(Use the path to your Godot executable.) I tested this on a fresh clone with Godot 4.7: the ranch opens, residents
+appear and the toolbar works. A clone is missing a few things that aren't in the repo, so the game logs errors for
+them and runs without them: the music, the thumbnails on the deposit screen, Cryogonal's ice textures and the berry
+models.
+
+Depositing from a save needs the Save Reader. Build it from `tools/save-reader` with .NET 9 (the steps are in that
+folder's README). In a packaged build it goes in a `Save Reader` folder next to `Poke-Farm.exe`. The checked-in
+source has been built successfully with .NET 9 and tested against a synthetic Generation 5 save.
 
 ## Known gaps
 
 - The model catalog isn't fully checked. Some colours, eyes, animations and sizes are probably wrong.
 - Only Windows has been tested.
-- I haven't run a fresh clone, or the model fetch script against the real release.
+- A fresh clone runs but has no music, no deposit-screen thumbnails, and no Cryogonal ice textures or berry models.
 
 ## Credits and licence
 
