@@ -50,3 +50,6 @@ tools/save-reader/obj/
 # Model files are distributed as release zips (see tools/fetch_models.ps1), not committed.
 models/*.glb
 models-download/
+
+# Build output and the GPL PKHeX binary the Save Reader links against (never commit these)
+tools/save-reader/*.dll

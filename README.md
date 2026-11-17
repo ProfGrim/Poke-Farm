@@ -226,8 +226,8 @@ godot --path . -- --full
 ```
 
 (Use the path to your Godot executable.) I tested this on a fresh clone with Godot 4.7, after running the fetch
-script on the real release files: the ranch opened with nothing logged as an error, and residents, berry bowls and the
-toolbar all worked. The source-asset download supplies the models, thumbnails, palette and
+script with no sign-in: the ranch opened with nothing logged as an error, the deposit screen showed its thumbnails,
+and depositing from a test save filled the ranch with residents. The source-asset download supplies the models, thumbnails, palette and
 effect textures, and berry models. Music is intentionally available only in packaged game builds; a source clone
 runs silently without logging missing-audio errors.
 
