@@ -231,6 +231,14 @@ and depositing from a test save filled the ranch with residents. The source-asse
 effect textures, and berry models. Music is intentionally available only in packaged game builds; a source clone
 runs silently without logging missing-audio errors.
 
+**Want music in a source clone?** Download the free
+[Free Fantasy Music Pack](https://donat-baracsi.itch.io/free-fantasy-music-pack) yourself and follow its terms.
+The game plays Ogg Vorbis files from `map/`, named after the tracks, so convert each one and save it as
+`map/<track name>.ogg`. The ten names are in `map/music.json`: Always, Falling leaves, Falling to silence, Flower
+field, Forever, Living forest, Returning home, Under a sycamore, Wandering soul and Where the wind blows us. With
+ffmpeg, that's `ffmpeg -i "Forever.wav" -c:a libvorbis -q:a 5 "map/Forever.ogg"` for each track. I haven't tried
+that exact conversion myself. The meal bell sound isn't part of that pack, so it stays silent in a clone.
+
 Depositing from a save needs the Save Reader. Build it from `tools/save-reader` with .NET 9 (the steps are in that
 folder's README). In a packaged build it goes in a `Save Reader` folder next to `Poke-Farm.exe`. The checked-in
 source has been built successfully with .NET 9 and tested against a synthetic Generation 5 save.
