@@ -1,0 +1,702 @@
+[
+ {
+  "key": "p0660_00",
+  "name": "Diggersby",
+  "species": 660,
+  "form": 0,
+  "walk_loop_distance": 0.56
+ },
+ {
+  "key": "p0507_00",
+  "name": "Herdier",
+  "species": 507,
+  "form": 0,
+  "walk_loop_distance": 0.512
+ },
+ {
+  "key": "p0777_00",
+  "name": "Togedemaru",
+  "species": 777,
+  "form": 0,
+  "walk_loop_distance": 0.2
+ },
+ {
+  "key": "p0728_00",
+  "name": "Popplio",
+  "species": 728,
+  "form": 0,
+  "walk_loop_distance": 0.16
+ },
+ {
+  "key": "p0095_00",
+  "name": "Onix",
+  "species": 95,
+  "form": 0,
+  "walk_loop_distance": 1.32
+ },
+ {
+  "key": "p0425_00",
+  "name": "Drifloon",
+  "species": 425,
+  "form": 0,
+  "walk_loop_distance": 1.33333
+ },
+ {
+  "key": "p0206_00",
+  "name": "Dunsparce",
+  "species": 206,
+  "form": 0,
+  "walk_loop_distance": 0.4
+ },
+ {
+  "key": "p0869_07",
+  "name": "Alcremie",
+  "species": 869,
+  "form": 7,
+  "walk_loop_distance": 0.08
+ },
+ {
+  "key": "p0768_00",
+  "name": "Golisopod",
+  "species": 768,
+  "form": 0,
+  "walk_loop_distance": 1.024
+ },
+ {
+  "key": "p0103_00",
+  "name": "Exeggutor",
+  "species": 103,
+  "form": 0,
+  "walk_loop_distance": 1.232
+ },
+ {
+  "key": "p0051_00",
+  "name": "Dugtrio",
+  "species": 51,
+  "form": 0,
+  "walk_loop_distance": 0.8
+ },
+ {
+  "key": "p0688_00",
+  "name": "Binacle",
+  "species": 688,
+  "form": 0,
+  "walk_loop_distance": 0.24
+ },
+ {
+  "key": "p0113_00",
+  "name": "Chansey",
+  "species": 113,
+  "form": 0,
+  "walk_loop_distance": 0.64
+ },
+ {
+  "key": "p0869_06",
+  "name": "Alcremie",
+  "species": 869,
+  "form": 6,
+  "walk_loop_distance": 0.08
+ },
+ {
+  "key": "p0272_00",
+  "name": "Ludicolo",
+  "species": 272,
+  "form": 0,
+  "walk_loop_distance": 0.672
+ },
+ {
+  "key": "p0819_00",
+  "name": "Skwovet",
+  "species": 819,
+  "form": 0,
+  "walk_loop_distance": 0.21333
+ },
+ {
+  "key": "p0898_02",
+  "name": "Calyrex",
+  "species": 898,
+  "form": 2,
+  "walk_loop_distance": 1.0752
+ },
+ {
+  "key": "p0644_00",
+  "name": "Zekrom",
+  "species": 644,
+  "form": 0,
+  "walk_loop_distance": 5.6
+ },
+ {
+  "key": "p0415_00",
+  "name": "Combee",
+  "species": 415,
+  "form": 0,
+  "walk_loop_distance": 1.12
+ },
+ {
+  "key": "p0320_00",
+  "name": "Wailmer",
+  "species": 320,
+  "form": 0,
+  "walk_loop_distance": 2.8
+ },
+ {
+  "key": "p0592_00",
+  "name": "Frillish",
+  "species": 592,
+  "form": 0,
+  "walk_loop_distance": 0.96
+ },
+ {
+  "key": "p0698_00",
+  "name": "Amaura",
+  "species": 698,
+  "form": 0,
+  "walk_loop_distance": 0.4
+ },
+ {
+  "key": "p0844_00",
+  "name": "Sandaconda",
+  "species": 844,
+  "form": 0,
+  "walk_loop_distance": 0.48
+ },
+ {
+  "key": "p0010_00",
+  "name": "Caterpie",
+  "species": 10,
+  "form": 0,
+  "walk_loop_distance": 0.04
+ },
+ {
+  "key": "p0306_00",
+  "name": "Aggron",
+  "species": 306,
+  "form": 0,
+  "walk_loop_distance": 1.2
+ },
+ {
+  "key": "p0230_00",
+  "name": "Kingdra",
+  "species": 230,
+  "form": 0,
+  "walk_loop_distance": 2.24
+ },
+ {
+  "key": "p0259_00",
+  "name": "Marshtomp",
+  "species": 259,
+  "form": 0,
+  "walk_loop_distance": 0.396
+ },
+ {
+  "key": "p0438_00",
+  "name": "Bonsly",
+  "species": 438,
+  "form": 0,
+  "walk_loop_distance": 0.176
+ },
+ {
+  "key": "p0403_00",
+  "name": "Shinx",
+  "species": 403,
+  "form": 0,
+  "walk_loop_distance": 0.176
+ },
+ {
+  "key": "p0855_00",
+  "name": "Polteageist",
+  "species": 855,
+  "form": 0,
+  "walk_loop_distance": 0.48
+ },
+ {
+  "key": "p0886_00",
+  "name": "Drakloak",
+  "species": 886,
+  "form": 0,
+  "walk_loop_distance": 0.56
+ },
+ {
+  "key": "p0569_00",
+  "name": "Garbodor",
+  "species": 569,
+  "form": 0,
+  "walk_loop_distance": 1.49333
+ },
+ {
+  "key": "p0836_00",
+  "name": "Boltund",
+  "species": 836,
+  "form": 0,
+  "walk_loop_distance": 0.73173
+ },
+ {
+  "key": "p0508_00",
+  "name": "Stoutland",
+  "species": 508,
+  "form": 0,
+  "walk_loop_distance": 0.6
+ },
+ {
+  "key": "p0027_00",
+  "name": "Sandshrew",
+  "species": 27,
+  "form": 0,
+  "walk_loop_distance": 0.49867
+ },
+ {
+  "key": "p0037_00",
+  "name": "Vulpix",
+  "species": 37,
+  "form": 0,
+  "walk_loop_distance": 0.384
+ },
+ {
+  "key": "p0744_00",
+  "name": "Rockruff",
+  "species": 744,
+  "form": 0,
+  "walk_loop_distance": 0.24267
+ },
+ {
+  "key": "p0869_02",
+  "name": "Alcremie",
+  "species": 869,
+  "form": 2,
+  "walk_loop_distance": 0.08
+ },
+ {
+  "key": "p0237_00",
+  "name": "Hitmontop",
+  "species": 237,
+  "form": 0,
+  "walk_loop_distance": 0.6
+ },
+ {
+  "key": "p0803_00",
+  "name": "Poipole",
+  "species": 803,
+  "form": 0,
+  "walk_loop_distance": 2.8
+ },
+ {
+  "key": "p0080_02",
+  "name": "Slowbro",
+  "species": 80,
+  "form": 2,
+  "walk_loop_distance": 0.8
+ },
+ {
+  "key": "p0643_00",
+  "name": "Reshiram",
+  "species": 643,
+  "form": 0,
+  "walk_loop_distance": 3.584
+ },
+ {
+  "key": "p0360_00",
+  "name": "Wynaut",
+  "species": 360,
+  "form": 0,
+  "walk_loop_distance": 0.24533
+ },
+ {
+  "key": "p0434_00",
+  "name": "Stunky",
+  "species": 434,
+  "form": 0,
+  "walk_loop_distance": 0.4
+ },
+ {
+  "key": "p0845_00",
+  "name": "Cramorant",
+  "species": 845,
+  "form": 0,
+  "walk_loop_distance": 2.56
+ },
+ {
+  "key": "p0711_00",
+  "name": "Gourgeist",
+  "species": 711,
+  "form": 0,
+  "walk_loop_distance": 0.18667
+ },
+ {
+  "key": "p0163_00",
+  "name": "Hoothoot",
+  "species": 163,
+  "form": 0,
+  "walk_loop_distance": 0.56
+ },
+ {
+  "key": "p0737_00",
+  "name": "Charjabug",
+  "species": 737,
+  "form": 0,
+  "walk_loop_distance": 0.16
+ },
+ {
+  "key": "p0338_00",
+  "name": "Solrock",
+  "species": 338,
+  "form": 0,
+  "walk_loop_distance": 3.36
+ },
+ {
+  "key": "p0040_00",
+  "name": "Wigglytuff",
+  "species": 40,
+  "form": 0,
+  "walk_loop_distance": 0.85333
+ },
+ {
+  "key": "p0034_00",
+  "name": "Nidoking",
+  "species": 34,
+  "form": 0,
+  "walk_loop_distance": 1.17333
+ },
+ {
+  "key": "p0450_00",
+  "name": "Hippowdon",
+  "species": 450,
+  "form": 0,
+  "walk_loop_distance": 0.96
+ },
+ {
+  "key": "p0820_00",
+  "name": "Greedent",
+  "species": 820,
+  "form": 0,
+  "walk_loop_distance": 0.4
+ },
+ {
+  "key": "p0804_00",
+  "name": "Naganadel",
+  "species": 804,
+  "form": 0,
+  "walk_loop_distance": 2.408
+ },
+ {
+  "key": "p0798_00",
+  "name": "Kartana",
+  "species": 798,
+  "form": 0,
+  "walk_loop_distance": 2.98667
+ },
+ {
+  "key": "p0044_00",
+  "name": "Gloom",
+  "species": 44,
+  "form": 0,
+  "walk_loop_distance": 0.64
+ },
+ {
+  "key": "p0030_00",
+  "name": "Nidorina",
+  "species": 30,
+  "form": 0,
+  "walk_loop_distance": 0.56
+ },
+ {
+  "key": "p0691_00",
+  "name": "Dragalge",
+  "species": 691,
+  "form": 0,
+  "walk_loop_distance": 1.28
+ },
+ {
+  "key": "p0588_00",
+  "name": "Karrablast",
+  "species": 588,
+  "form": 0,
+  "walk_loop_distance": 0.21333
+ },
+ {
+  "key": "p0773_00",
+  "name": "Silvally",
+  "species": 773,
+  "form": 0,
+  "walk_loop_distance": 1.38667
+ },
+ {
+  "key": "p0547_00",
+  "name": "Whimsicott",
+  "species": 547,
+  "form": 0,
+  "walk_loop_distance": 0.512
+ },
+ {
+  "key": "p0801_00",
+  "name": "Magearna",
+  "species": 801,
+  "form": 0,
+  "walk_loop_distance": 0.544
+ },
+ {
+  "key": "p0869_00",
+  "name": "Alcremie",
+  "species": 869,
+  "form": 0,
+  "walk_loop_distance": 0.08
+ },
+ {
+  "key": "p0615_00",
+  "name": "Cryogonal",
+  "species": 615,
+  "form": 0,
+  "walk_loop_distance": 2.8
+ },
+ {
+  "key": "p0244_00",
+  "name": "Entei",
+  "species": 244,
+  "form": 0,
+  "walk_loop_distance": 1.81333
+ },
+ {
+  "key": "p0678_00",
+  "name": "Meowstic",
+  "species": 678,
+  "form": 0,
+  "walk_loop_distance": 0.32
+ },
+ {
+  "key": "p0638_00",
+  "name": "Cobalion",
+  "species": 638,
+  "form": 0,
+  "walk_loop_distance": 0.96
+ },
+ {
+  "key": "p0008_00",
+  "name": "Wartortle",
+  "species": 8,
+  "form": 0,
+  "walk_loop_distance": 0.64
+ },
+ {
+  "key": "p0810_00",
+  "name": "Grookey",
+  "species": 810,
+  "form": 0,
+  "walk_loop_distance": 0.24267
+ },
+ {
+  "key": "p0587_00",
+  "name": "Emolga",
+  "species": 587,
+  "form": 0,
+  "walk_loop_distance": 0.23467
+ },
+ {
+  "key": "p0613_00",
+  "name": "Cubchoo",
+  "species": 613,
+  "form": 0,
+  "walk_loop_distance": 0.23333
+ },
+ {
+  "key": "p0869_01",
+  "name": "Alcremie",
+  "species": 869,
+  "form": 1,
+  "walk_loop_distance": 0.08
+ },
+ {
+  "key": "p0773_13",
+  "name": "Silvally",
+  "species": 773,
+  "form": 13,
+  "walk_loop_distance": 1.38667
+ },
+ {
+  "key": "p0550_01",
+  "name": "Basculin",
+  "species": 550,
+  "form": 1,
+  "walk_loop_distance": 1.344
+ },
+ {
+  "key": "p0718_03",
+  "name": "Zygarde",
+  "species": 718,
+  "form": 3,
+  "walk_loop_distance": 1.86667
+ },
+ {
+  "key": "p0773_05",
+  "name": "Silvally",
+  "species": 773,
+  "form": 5,
+  "walk_loop_distance": 1.38667
+ },
+ {
+  "key": "p0247_00",
+  "name": "Pupitar",
+  "species": 247,
+  "form": 0,
+  "walk_loop_distance": 0.48
+ },
+ {
+  "key": "p0139_00",
+  "name": "Omastar",
+  "species": 139,
+  "form": 0,
+  "walk_loop_distance": 0.32
+ },
+ {
+  "key": "p0792_00",
+  "name": "Lunala",
+  "species": 792,
+  "form": 0,
+  "walk_loop_distance": 3.84
+ },
+ {
+  "key": "p0346_00",
+  "name": "Cradily",
+  "species": 346,
+  "form": 0,
+  "walk_loop_distance": 0.896
+ },
+ {
+  "key": "p0009_00",
+  "name": "Blastoise",
+  "species": 9,
+  "form": 0,
+  "walk_loop_distance": 0.8
+ },
+ {
+  "key": "p0893_00",
+  "name": "Zarude",
+  "species": 893,
+  "form": 0,
+  "walk_loop_distance": 1.23955
+ },
+ {
+  "key": "p0051_01",
+  "name": "Dugtrio",
+  "species": 51,
+  "form": 1,
+  "walk_loop_distance": 0.96
+ },
+ {
+  "key": "p0879_00",
+  "name": "Copperajah",
+  "species": 879,
+  "form": 0,
+  "walk_loop_distance": 0.88
+ },
+ {
+  "key": "p0291_00",
+  "name": "Ninjask",
+  "species": 291,
+  "form": 0,
+  "walk_loop_distance": 1.68
+ },
+ {
+  "key": "p0821_00",
+  "name": "Rookidee",
+  "species": 821,
+  "form": 0,
+  "walk_loop_distance": 0.48
+ },
+ {
+  "key": "p0133_00",
+  "name": "Eevee",
+  "species": 133,
+  "form": 0,
+  "walk_loop_distance": 0.176
+ },
+ {
+  "key": "p0280_00",
+  "name": "Ralts",
+  "species": 280,
+  "form": 0,
+  "walk_loop_distance": 0.12
+ },
+ {
+  "key": "p0078_01",
+  "name": "Rapidash",
+  "species": 78,
+  "form": 1,
+  "walk_loop_distance": 0.93333
+ },
+ {
+  "key": "p0452_00",
+  "name": "Drapion",
+  "species": 452,
+  "form": 0,
+  "walk_loop_distance": 0.42667
+ },
+ {
+  "key": "p0869_05",
+  "name": "Alcremie",
+  "species": 869,
+  "form": 5,
+  "walk_loop_distance": 0.08
+ },
+ {
+  "key": "p0381_00",
+  "name": "Latios",
+  "species": 381,
+  "form": 0,
+  "walk_loop_distance": 2.98666
+ },
+ {
+  "key": "p0118_00",
+  "name": "Goldeen",
+  "species": 118,
+  "form": 0,
+  "walk_loop_distance": 0.98
+ },
+ {
+  "key": "p0473_00",
+  "name": "Mamoswine",
+  "species": 473,
+  "form": 0,
+  "walk_loop_distance": 2.2
+ },
+ {
+  "key": "p0869_04",
+  "name": "Alcremie",
+  "species": 869,
+  "form": 4,
+  "walk_loop_distance": 0.08
+ },
+ {
+  "key": "p0627_00",
+  "name": "Rufflet",
+  "species": 627,
+  "form": 0,
+  "walk_loop_distance": 1.024
+ },
+ {
+  "key": "p0717_00",
+  "name": "Yveltal",
+  "species": 717,
+  "form": 0,
+  "walk_loop_distance": 6.4
+ },
+ {
+  "key": "p0169_00",
+  "name": "Crobat",
+  "species": 169,
+  "form": 0,
+  "walk_loop_distance": 2.688
+ },
+ {
+  "key": "p0555_02",
+  "name": "Darmanitan",
+  "species": 555,
+  "form": 2,
+  "walk_loop_distance": 1.02
+ },
+ {
+  "key": "p0738_00",
+  "name": "Vikavolt",
+  "species": 738,
+  "form": 0,
+  "walk_loop_distance": 3.84
+ }
+]

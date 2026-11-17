@@ -1,0 +1,24 @@
+{
+  "tag": "models-1",
+  "count": 1453,
+  "zips": [
+    {
+      "name": "PokeFarm-models-1.zip",
+      "files": 631,
+      "bytes": 1198185270,
+      "sha256": "d81ef0837c84153c954e9f36bbd3db0bbb78b9c9db84477d5e2bf761a3a8fe7c"
+    },
+    {
+      "name": "PokeFarm-models-2.zip",
+      "files": 486,
+      "bytes": 1197931926,
+      "sha256": "8adad8c82de4355108c5337cfa21502ae7fc1c0a57995a08c690bbb9a285fbfb"
+    },
+    {
+      "name": "PokeFarm-models-3.zip",
+      "files": 336,
+      "bytes": 1152892446,
+      "sha256": "748ccddbfef18626cea5e8aba53c900f317a78b53afcae0c2ba632a9601e1051"
+    }
+  ]
+}

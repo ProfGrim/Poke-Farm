@@ -1,0 +1,52 @@
+# Godot editor cache and local state
+.godot/
+.import/
+*.tmp
+*.log
+
+# Local exports and packaging
+build/
+dist/
+exports/
+local-builds/
+local-tools/generated/
+local-data/
+review-output/
+*.exe
+*.pck
+*.zip
+
+# Extracted/generated runtime assets. The owner has explicitly chosen to make
+# the finished model catalog eligible for publication with this fan project.
+# Saves, dumps, source archives, keys, and private emulator data remain excluded.
+map/*.glb
+map/*.ogg
+map/*.png
+!map/capture-balls.png
+!map/resident-shiny.png
+!map/sleep-bubbles.png
+!map/sleep-mark.png
+
+# Personal save files and emulator data
+*.sav
+*.dsv
+*.srm
+*.state
+*.bak
+main
+backup
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.user
+
+# .NET Save Reader build output
+tools/save-reader/bin/
+tools/save-reader/obj/
+
+# Model files are distributed as release zips (see tools/fetch_models.ps1), not committed.
+models/*.glb
+models-download/
